@@ -1,0 +1,106 @@
+.hero-unit p {
+  padding-top: 1em;
+  font-size: 15px;
+}
+
+.row p {
+  text-align: justify;
+}
+
+.posts {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.posts li {
+  border-bottom: 1px solid #DDD;
+  padding: 3px 0 2px 0;
+}
+
+.posts li a {
+  font-size: 15px;
+}
+
+.posts li time {
+  float: right;
+  padding-right: 1px;
+}
+
+time {
+  color: grey;
+}
+
+a.view-more {
+  float: right;
+  font-size: 12px;
+}
+
+.ulno {
+  display: inline-block;
+  list-style: none;
+}
+
+.ulno li {
+  display: inline-block;
+}
+
+.post-share { 
+  margin:4px auto 2.2%;
+  text-align:center;
+  width:100%;
+  padding:9px 0 5px;
+  border-top:1px dotted #d5d5d5;
+  border-bottom:1px dotted #d5d5d5;
+  border-radius:0 0 3px 3px;
+}
+
+.post-share li{
+  vertical-align:top;
+}
+.post-share .fb{
+  margin-right:4%
+}
+
+
+.project {
+  height: 150px;
+  padding: 5px;
+}
+
+.project p.description {
+  color: #444;
+  font-size: 15px;
+}
+
+.project p.updated-at {
+  margin: 0;
+  padding: 0;
+  color: #888;
+  font-size: 11px;
+}
+
+span.fork {
+  color: #888;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+
+#loading {
+  border: 2px solid #888;
+  background: #DDD;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  margin: 0px auto;
+  width: 250px;
+  font-style: italic;
+}
+
+#loading p {
+  text-align: center;
+  margin: 0px auto;
+  padding: 5px;
+}
