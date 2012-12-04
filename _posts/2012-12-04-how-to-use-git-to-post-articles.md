@@ -2,7 +2,7 @@
 layout: post
 title: 用git和jekyll来发表文章，并同步到github
 category: github
-tags: [git,jekyll]
+tags: [git, Jekyll]
 ---
 {% include JB/setup %}
 ##jekyll发表文章
