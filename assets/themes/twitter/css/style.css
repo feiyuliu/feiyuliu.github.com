@@ -1,5 +1,6 @@
 /* Override some defaults */
 html, body {
+  /*background-color: #eee;*/
   background-color: #eee;
   padding-top:20px; padding-bottom:10px;
 }
@@ -13,6 +14,19 @@ html, body {
   text-align: center; /* center align it with the container */
 }
 
+h1 {font-size: 2.7em;color: #f37;margin-bottom: 0.5em;}
+h2 {font-size: 2.0em;color: #000080;
+    border-bottom: 1px solid #BEBEBE;}
+h3 {font-size: 1.5em;color: #df5;margin-bottom: 0.4em;margin-top: 0.6em;
+    /*border-bottom: 1px dashed #29362E;*/
+    /*border-bottom: 1px dashed  rgba(255,230,0,0.1);*/}
+h4 {font-size: 1.25em;color: #6d9;}
+h5 {font-size: 1.15em;color: #e3e3f3;}
+h6 {font-size: 1.0em;}
+p {
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
 /* The white background content wrapper */
 .content {
   background-color: #fff;
@@ -64,9 +78,40 @@ html, body {
 	vertical-align:super;
 	font-size:0.8em;
 }
+.tag_box a:link {/* 默认时 */
+	background:#999;
+	color:#FFF;
+}
+.tag_box a:visited {/* 点过后 */
+	background:#999;
+	color:#FFF;
+}
+.tag_box a:hover {/* 经过时 */
+	background:#F95B1F;
+	color:#FFF;
+}
 .tag_box a.active {
 	background:#57A957;
 	border:1px solid #4C964D;
 	color:#FFF;
 }
-	
+/**************目录导航**************/
+#menuIndex {position:fixed;top:130px;right:5px;width:200px;overflow:auto}
+#menuIndex a {display:block;color:#000;}
+#menuIndex a:hover {text-decoration:none;}
+#menuIndex ul li{font-size:16px;margin-bottom:5px;word-wrap:break-word;}
+#menuIndex ul li.on{background-color:#66CCFF}
+#menuIndex li.h1{font-size:18px;font-weight:normal;}
+#menuIndex li.h3{padding-left:19px;}
+/* 去掉列表前的标识, li 会继承 */
+ul {list-style:none;}
+
+pre code, p code {
+	padding:0 1px;
+	font-size:0.9em;
+	line-height:1.5em; 
+    color: #000ABC;
+    -webkit-transition: all 0.45s linear;
+    -moz-transition: all 0.45s linear;
+    font-family:'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', 'Monaco', Courier, monospace !important
+}
