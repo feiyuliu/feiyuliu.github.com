@@ -15,8 +15,7 @@ html, body {
 }
 
 h1 {font-size: 2.7em;color: #f37;margin-bottom: 0.5em;}
-h2 {font-size: 2.0em;color: #000080;
-    border-bottom: 1px solid #BEBEBE;}
+h2 {font-size: 2.0em;color: #000080;}
 h3 {font-size: 1.5em;color: #df5;margin-bottom: 0.4em;margin-top: 0.6em;
     /*border-bottom: 1px dashed #29362E;*/
     /*border-bottom: 1px dashed  rgba(255,230,0,0.1);*/}
