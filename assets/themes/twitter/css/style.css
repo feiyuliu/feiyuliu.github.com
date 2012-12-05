@@ -26,6 +26,9 @@ p {
 	font-size: 1.2em;
 	line-height: 1.5em;
 }
+p  strong{
+	color: #FF0000;
+}
 /* The white background content wrapper */
 .content {
   background-color: #fff;
