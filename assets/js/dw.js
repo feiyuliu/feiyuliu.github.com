@@ -58,7 +58,7 @@ $(document).ready(function(){
             e.preventDefault();
             var scrollNum = $(this).attr('data-top') || $('#'+$(this).attr('data-id')).offset().top;
             //window.scrollTo(0,scrollNum-30);
-            $scrollable.animate({ scrollTop: scrollNum-10 }, 400, 'swing');
+            $scrollable.animate({ scrollTop: scrollNum-40 }, 400, 'swing');
         })
 
         $(window).load(function(){
