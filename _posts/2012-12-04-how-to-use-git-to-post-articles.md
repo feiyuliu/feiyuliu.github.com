@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 用git和jekyll来发表文章,并同步到github
-description: 用git和jekyll来发表文章,
+description: 用git和jekyll来发表文章,并同步到github，介绍教程和遇到的问题
 category: github
 tags: [git, Jekyll]
 ---
