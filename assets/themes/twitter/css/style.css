@@ -1,8 +1,8 @@
 /* Override some defaults */
 html, body {
   /*background-color: #eee;*/
-  background-color: #eee;
   padding-top:20px; padding-bottom:10px;
+  background: #eee url(http://l.ruby-china.org/assets/bg-76c68310e8b3838ef3541e1fa6a53c8d.png) bottom left repeat
 }
 .navbar {
   margin-bottom: 0;
@@ -116,4 +116,103 @@ pre code, p code {
     -webkit-transition: all 0.45s linear;
     -moz-transition: all 0.45s linear;
     font-family:'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', 'Monaco', Courier, monospace !important
+}
+
+/*分享设置*/
+.social-share-button-baidu {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") 0px 0px no-repeat
+}
+
+.social-share-button-delicious {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") -16px 0px no-repeat
+}
+
+.social-share-button-douban {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") 0px -16px no-repeat
+}
+
+.social-share-button-email {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") -16px -16px no-repeat
+}
+
+.social-share-button-facebook {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") -32px 0px no-repeat
+}
+
+.social-share-button-flickr {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") -32px -16px no-repeat
+}
+
+.social-share-button-google {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") 0px -32px no-repeat
+}
+
+.social-share-button-google_plus {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") -16px -32px no-repeat
+}
+
+.social-share-button-kaixin001 {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") -32px -32px no-repeat
+}
+
+.social-share-button-qq {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") -48px 0px no-repeat
+}
+
+.social-share-button-renren {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") -48px -16px no-repeat
+}
+
+.social-share-button-tqq {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") -48px -32px no-repeat
+}
+
+.social-share-button-twitter {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") 0px -48px no-repeat
+}
+
+.social-share-button-weibo {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") -16px -48px no-repeat
 }
