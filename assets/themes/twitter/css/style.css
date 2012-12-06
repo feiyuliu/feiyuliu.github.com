@@ -216,3 +216,49 @@ pre code, p code {
 	height: 16px;
 	background: url("http://l.ruby-china.org/assets/sprites/social-share-button-ae547dcfa2c720fa6fbae9ba7897b23b.png") -16px -48px no-repeat
 }
+/*添加搜索*/
+.navbar-search {
+	position: relative;
+	float: right;
+	margin-top: 6px;
+	margin-bottom: 0
+}
+
+.navbar-search .search-query {
+	padding: 4px 9px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 1;
+	color: #ffffff;
+	background-color: #626262;
+	border: 1px solid #151515;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1),0 1px 0px rgba(255,255,255,0.15);
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1),0 1px 0px rgba(255,255,255,0.15);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1),0 1px 0px rgba(255,255,255,0.15);
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+	transition: none
+}
+
+.navbar-search .search-query:-moz-placeholder {
+	color: #cccccc
+}
+
+.navbar-search .search-query::-webkit-input-placeholder {
+	color: #cccccc
+}
+
+.navbar-search .search-query:focus,.navbar-search .search-query.focused {
+	padding: 5px 10px;
+	color: #333333;
+	text-shadow: 0 1px 0 #ffffff;
+	background-color: #ffffff;
+	border: 0;
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,0.15);
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,0.15);
+	box-shadow: 0 0 3px rgba(0,0,0,0.15);
+	outline: 0
+}

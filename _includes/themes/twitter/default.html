@@ -36,6 +36,10 @@
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}
           </ul>
+		  <form action="http://google.com.hk/search" class="navbar-search pull-left" method="get">
+			<input type="text" name="q" class="search-query span3" value="" placeholder="搜索" />
+			<input type="hidden" name="q" value="site:feiyuliu.github.com">
+		  </form>
         </div>
       </div>
     </div>
