@@ -3,6 +3,16 @@
   font-size: 15px;
 }
 
+.hero-unit .name {
+  padding-bottom: 0.3em;
+}
+.weibo {
+  position: relative;
+  left: 200px;
+  top: 20px;
+}
+
+
 .row p {
   text-align: justify;
 }
