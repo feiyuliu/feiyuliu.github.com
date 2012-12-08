@@ -13,3 +13,11 @@ TEXT-INDENT: -9999em; OUTLINE-style: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH:
 .back-to .back-top:hover {
 BACKGROUND-POSITION: -50px 0px
 }
+#flickrList li {
+	list-style: none;
+	padding: 0;
+	display: inline;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	text-align: center
+}

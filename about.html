@@ -5,4 +5,30 @@ header: 关于我
 group: navigation
 ---
 {% include JB/setup %}
-nothing to say
+
+<p>Name: 刘飞宇 (Feiyu Lau)</p>
+<p>City: Huanggang | Chengdu, China</p>
+<p>Email: liufeiyu323@gamil.com</p>
+<p>Weibo: <a href="http://weibo.com/feiyuliu">@SolrJ</a></p>
+<p>No house, No car, No wife</p>
+<p>No money, No talent, No career</p>
+<h4>My Flickr</h4>
+<ul id="flickrList">
+</ul>
+<div class="more"><a href="http://flickr.com/89242684@N08" target="_blank">More photos&#8230;</a></div>
+<script type="text/javascript">
+var flickrNickname = "89242684@N08";
+function jsonFlickrApi(rsp) {
+  if (rsp.stat != "ok"){ return; }
+  var list = "";
+  for (var i=0; i < rsp.photos.photo.length; i++) {
+    var photo    = rsp.photos.photo[i];
+    var imgUrl   = 'http://farm'+ photo.farm +'.static.flickr.com/'+ photo.server +'/'+ photo.id +'_'+ photo.secret +'_m.jpg';
+    var photoUrl = 'http://www.flickr.com/photos/'+ flickrNickname +'/'+ photo.id;
+
+    list += '<li id="flickrItem_'+i+'"><a href="'+ photoUrl +'" title="'+ photo.title +'"><img alt="'+ photo.title +'" src="'+ imgUrl +'" /></a></li>';
+  }
+  document.getElementById('flickrList').innerHTML = list;
+}
+</script>
+<script lang="Javascript" src="http://api.flickr.com/services/rest/?format=json&method=flickr.photos.search&user_id=89242684@N08&per_page=12&api_key=1a81f9f9ff2fb1f18dbf0ae37e1a32c7"></script>
