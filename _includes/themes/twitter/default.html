@@ -48,50 +48,50 @@
 
     <div class="container">
 
-      <div class="content">
-        {{ content }}
-      </div>
-	<div id="hot_locations" class="box">
-	  <h2>友情链接</h2>
-	  <ul>
-		<li class="name"><a href="http://blog.segmac.com/" target="_blank">弘哥保护你</a></li>
-		<li class="name"><a href="http://blog.mosquitoliu.com/" target="_blank">小文</a></li>
-	  </ul>
-	</div>
-      <footer>
-		<p><a href="/about.html">关于</a> | <a href="http://www.wfu.edu.cn/" target="_blank" rel="nofollow">潍坊学院</a> | <a href="http://www.uestc.edu.cn/" target="_blank" rel="nofollow">电子科大</a> | <a href="http://www.openstack.org/" target="_blank" rel="nofollow">OpenStack</a> | <a href="http://mirrors.163.com/" target="_blank" rel="nofollow">网易镜像</a> | <a href="http://twitter.com/feiyliu" target="_blank" rel="nofollow">Twitter | <a href="http://weibo.com/feiyuliu" target="_blank" rel="nofollow">Weibo</a>
-		</p>
+		<div class="content">
+			{{ content }}
+		</div>
+		<div id="hot_locations" class="box">
+		  <h2>友情链接</h2>
+		  <ul>
+			<li class="name"><a href="http://blog.segmac.com/" target="_blank">弘哥保护你</a></li>
+			<li class="name"><a href="http://blog.mosquitoliu.com/" target="_blank">小文</a></li>
+		  </ul>
+		</div>
+			<div style="display:none;" class="back-to" id="toolBackTop">
+				<a title="返回顶部" onclick="window.scrollTo(0,0);return false;" href="#top" class="back-top">返回顶部</a>
+			</div>
+			<script type="text/javascript">
+			$(document).ready(function () {
+				var bt = $('#toolBackTop');
+				var sw = $(document.body)[0].clientWidth;
 
-        <p><b>Copyright&nbsp;&nbsp;&copy;&nbsp;&nbsp;2012 -- {{ site.author.name }}<b>
-		<script src="http://s21.cnzz.com/stat.php?id=4834680&web_id=4834680&show=pic" language="JavaScript">
-        </p>
-      </footer>
+				var limitsw = (sw - 840) / 2 - 80;
+				if (limitsw > 0){
+					limitsw = parseInt(limitsw);
+					bt.css("right",limitsw);
+				}
+
+				$(window).scroll(function() {
+					var st = $(window).scrollTop();
+					if(st > 30){
+						bt.show();
+					}else{
+						bt.hide();
+					}
+				});
+			})
+			</script>
+        <footer>
+			<p><a href="/about.html">关于</a> | <a href="http://www.wfu.edu.cn/" target="_blank" rel="nofollow">潍坊学院</a> | <a href="http://www.uestc.edu.cn/" target="_blank" rel="nofollow">电子科大</a> | <a href="http://www.openstack.org/" target="_blank" rel="nofollow">OpenStack</a> | <a href="http://mirrors.163.com/" target="_blank" rel="nofollow">网易镜像</a> | <a href="http://twitter.com/feiyliu" target="_blank" rel="nofollow">Twitter | <a href="http://weibo.com/feiyuliu" target="_blank" rel="nofollow">Weibo</a>
+			</p>
+
+			<p><b>Copyright&nbsp;&nbsp;&copy;&nbsp;&nbsp;2012 -- {{ site.author.name }}<b>
+			<script src="http://s21.cnzz.com/stat.php?id=4834680&web_id=4834680&show=pic" language="JavaScript">
+			</p>
+        </footer>
 
     </div> <!-- /container -->
-	<div style="display:none;" class="back-to" id="toolBackTop">
-		<a title="返回顶部" onclick="window.scrollTo(0,0);return false;" href="#top" class="back-top">返回顶部</a>
-	</div>
-	<script type="text/javascript">
-	$(document).ready(function () {
-		var bt = $('#toolBackTop');
-		var sw = $(document.body)[0].clientWidth;
-
-		var limitsw = (sw - 840) / 2 - 80;
-		if (limitsw > 0){
-			limitsw = parseInt(limitsw);
-			bt.css("right",limitsw);
-		}
-
-		$(window).scroll(function() {
-			var st = $(window).scrollTop();
-			if(st > 30){
-				bt.show();
-			}else{
-				bt.hide();
-			}
-		});
-	})
-	</script>
     {% include JB/analytics %}
   </body>
 </html>
