@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    if($('h2').length > 1){
+    if($('h2').length > 2){
         var h2 = [],h3 = [],tmpl = '<ul>',h2index = 0;
 
         var findScrollableElement = function(els) {
