@@ -12,7 +12,7 @@ group: navigation
 
 **以模块复用为荣 , 以复制粘贴为耻;以多态应用为荣 , 以分支判断为耻;**
 
-**以 Pythonic为荣 , 以冗余拖沓为耻;以总结分享为荣 , 以跪求其解为耻;**
+**以Pythonic为荣 , 以冗余拖沓为耻;以总结分享为荣 , 以跪求其解为耻;**
 ##Python学习网站
 1. [Python Docs](http://docs.python.org)
 2. [Python简明教程](http://sebug.net/paper/python/)
