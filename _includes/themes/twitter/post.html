@@ -6,7 +6,15 @@
 <div class="row">
   <div class="span8">
     {{ content }}
-    <hr>
+	<div class="asset-footer">
+		<h6>版权信息</h6>
+		<hr>
+		<ul>
+		<li>版权声明：自由转载-请注明网址</li>
+		<li>原文网址：<a href="http://feiyuliu.github.com{{ page.url }}">http://feiyuliu.github.com{{ page.url }}</a></li>
+		<li>最后修改时间：{{ page.date | date:"%Y-%m-%d" }}</li>
+		</ul>
+	</div>
 	<div class='social-share-button' data-title='{{ page.title }}'>
 		<a href="#" class="social-share-button-weibo" data-site="weibo" onclick="return SocialShareButton.share(this);" rel="nofollow " title="分享到新浪微博"></a>
 		<a href="#" class="social-share-button-renren" data-site="renren" onclick="return SocialShareButton.share(this);" rel="nofollow " title="分享到人人"></a>
@@ -53,7 +61,7 @@
   {% endunless %}  
 	<h4>最近发表</h4>
     <ul id="recent_posts">
-    {% for rpost in site.posts limit: 10 %}
+    {% for rpost in site.posts limit: 6 %}
       <li class="post">
         <a href="{{ BASE_PATH }}{{ rpost.url }}">{{ rpost.title }}</a>
       </li>
