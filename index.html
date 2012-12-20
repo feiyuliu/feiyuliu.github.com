@@ -1,40 +1,94 @@
----
-layout: page
-tagline: 
----
-{% include JB/setup %}
 
-<link href="/assets/css/socialicons.css" rel="stylesheet" type="text/css" media="all">
-<link href="/assets/css/main.css" rel="stylesheet" type="text/css" media="all">
-<div class="hero-unit">
-  <h1 class="name" style="color:#333333;">Liu Feiyu <a href="http://weibo.com/u/2058045730?s=6uyXnP" class="weibo" target="_blank"><img border="0" src="http://service.t.sina.com.cn/widget/qmd/2058045730/4d7daebc/1.png"/></a></h1>
-  <p>
-  A student，interested in WEB Develop , Cloud Computing and Open Source , want to be a Pythonic !
-  </p>
-  <ul class="socialicons bw" style="float: right;">
-    <!--<li><a href="http://www.linkedin.com/in/" target="_blank" class="linkedin"></a></li> -->
-    <li><a href="http://www.github.com/feiyuliu" target="_blank" class="github"></a></li> 
-	<li><a href="http://stackoverflow.com/users/1369052/solrj" target="_blank" class="stackoverflow"></a></li>
-	<li><a href="https://www.quora.com/Feiyu-Liu" target="_blank" class="quora"></a></li>
-    <li><a href="http://www.twitter.com/" target="_blank" class="twitter"></a></li>
-    <li><a href="https://www.facebook.com/" target="_blank" class="facebook"></a></li>
-   
-  </ul>
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Refresh" content="5;URL=index1.html" />
+    <title>Feiyuliu's blog</title>
+    
+    <meta name="author" content="Feiyu Liu">
+
+    <style type="text/css">
+*{margin:0;padding:0;}
+body{
+	background-image: url(http://宋飞飞.中国/2012/2012/2012.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	}
+#content{
+	width:300px;
+	margin:400px auto;
+	padding:20px 50px;
+	border:1px solid #ccc;
+	color: #FFF;
+	background-image: url(http://宋飞飞.中国/2012/2012/1.png);
+	background-repeat: repeat;
+}#content p span{
+	color:red;
+	font:bold 20px Arial;
+	text-align: center;
+	padding: auto auto;
+}
+#content p {
+	
+	text-align: center;
+
+}
+h1{
+	text-align: center;
+	}
+#content p a{
+	color:#888;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 12px;
+	line-height: 23px;
+	text-align: center;
+	width: 200px;
+}
+.text{ margin:100px auto;}
+.footer {float:center;height:30px; margin:0 auto;color:#ccc;}
+.ft-txt{
+	float:right;clear:both; width:230px;margin:0px auto;height:20px;color:#fff; display:block; font-size:12px;
+	}
+	.ft-txt a{
+color:#fff; 
+	}
+</style>
+</head>
+<body><div id="content">
+<h1>2012世界末日倒计时</h1>
+<p>还剩<span id="times">36天06小时06分06秒</span></p>
 </div>
 
+<br /><br /><br /><br /><br /><br />
+<script language="JavaScript">
+function fresh()
+{
+        var endtime=new Date("2012/12/21,15:14:35");
+        var nowtime = new Date();
+        var leftsecond=parseInt((endtime.getTime()-nowtime.getTime())/1000);
+        d=parseInt(leftsecond/3600/24);
+        h=parseInt((leftsecond/3600)%24);
+        m=parseInt((leftsecond/60)%60);
+        s=parseInt(leftsecond%60);
+       
+		document.getElementById("times").innerHTML=d+"天"+h+"小时"+m+"分"+s+"秒";
+		document.getElementById("times2").innerHTML=d+"天"+h+"小时"+m+"分"+s+"秒";
+	
+        if(leftsecond<=0){
+        document.getElementById("times").innerHTML="世界末日时间到了";
+		document.getElementById("times2").innerHTML="世界末日时间到了";
+        clearInterval(sh);
+        }
+}
+fresh()
+var sh;
+sh=setInterval(fresh,1000);
+</script>
 
-<h2 style="padding-top: 0.5em; margin-bottom: 0.5em;color:#333333;">
-  最新文章
-  <ul class="socialicons bw" style="float:right;"> 
-    <li><a href="/atom.xml" class="rss"></a></li>
-  </ul>
-  <a href="/pages.html" class="view-more">查看所有文章</a>
-</h2>
-<ul class="posts">  
-  {% for post in site.posts limit:5%}
-  <li>
-      <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-      <time datetime="{{ post.date }}">{{ post.date | date: "%Y年%m月%d日" }}</time>
-  </li>
-  {% endfor %}
-</ul>
+
+    </div> <!-- /container -->
+    
+  </body>
+</html>
