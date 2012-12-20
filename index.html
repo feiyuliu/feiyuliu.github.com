@@ -4,7 +4,9 @@
   <head>
     <meta charset="utf-8">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta http-equiv="Refresh" content="5;URL=index1.html" />
+	<meta http-equiv="X-UA-Compatible" content="IE=8" />
+	<meta http-equiv="Refresh" content="10;URL=index1.html" />
+	<link rel="shortcut icon" href="favicon.ico" /> 
     <title>Feiyuliu's blog</title>
     
     <meta name="author" content="Feiyu Liu">
@@ -73,12 +75,9 @@ function fresh()
         m=parseInt((leftsecond/60)%60);
         s=parseInt(leftsecond%60);
        
-		document.getElementById("times").innerHTML=d+"天"+h+"小时"+m+"分"+s+"秒";
-		document.getElementById("times2").innerHTML=d+"天"+h+"小时"+m+"分"+s+"秒";
-	
+		document.getElementById("times").innerHTML=d+"天"+h+"小时"+m+"分"+s+"秒";	
         if(leftsecond<=0){
         document.getElementById("times").innerHTML="世界末日时间到了";
-		document.getElementById("times2").innerHTML="世界末日时间到了";
         clearInterval(sh);
         }
 }
