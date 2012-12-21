@@ -1,0 +1,7 @@
+Options -Indexes
+
+RewriteEngine On
+
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^liufeiyu.cn [NC]
+RewriteRule ^(.*)$ http://www.liufeiyu.cn/$1 [L,R=301]
