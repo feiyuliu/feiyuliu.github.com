@@ -22,7 +22,7 @@ tags: [openmeetings, JVM]
 3. 修改/openmeetings/WebContent/openmeetings 为/openmeetings/WebContent/yourproject (例如：mv /openmeetings/WebContent/openmeetings /openmeetings/WebContent/yourproject ).
 4. 打开文件openmeetings/WebContent/openmeetings/config.xml
 5. 找到并修改<webAppRootKey>openmeetings</webAppRootKey> 为<webAppRootKey>yourproject</webAppRootKey>
-6. 找到并修改 <httpRootKey>/openmeetings/</httpRootKey> 为<httpRootKey>/funmi/</httpRootKey>
+6. 找到并修改 <httpRootKey>/openmeetings/</httpRootKey> 为<httpRootKey>/yourproject/</httpRootKey>
 修改你的主菜单
 
 如果你想要修改你的主菜单，你可以编辑数据库文件中以下的表：
