@@ -65,8 +65,8 @@ tags: [git, Jekyll]
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;永久：添加两对用户自定义的环境变量，LC_ALL=en_US.UTF-8 和 LANG=en_US.UTF-8
 在git安装目录Git\etc\profile文件里加入以下内容
 
-    $export LC_ALL=en_US.UTF-8
-    $export LANG=en_US.UTF-8
+    export LC_ALL=en_US.UTF-8
+    export LANG=en_US.UTF-8
 ####2.运行jekyll --server时出现的编码问题
 
     "Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-0.11.2/lib/jekyll/convertible.rb:29:in ‘read_yaml’: invalid byte sequence in GBK (ArgumentError)"
