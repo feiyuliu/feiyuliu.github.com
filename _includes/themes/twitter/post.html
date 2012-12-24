@@ -24,6 +24,13 @@
 		<a href="#" class="social-share-button-twitter" data-site="twitter" onclick="return SocialShareButton.share(this);" rel="nofollow " title="分享到Twitter"></a>
 		<a href="#" class="social-share-button-facebook" data-site="facebook" onclick="return SocialShareButton.share(this);" rel="nofollow " title="分享到Facebook"></a>
 	</div>
+	<script type="text/javascript">
+        var lnks = document.getElementById("article").getElementsByTagName("a");
+        for(var i = 0; i < lnks.length; i++){
+            lnks[i].target = "_blank";
+            lnks[i].className = "external";            
+        }
+    </script>
 	<script type="text/javascript" id="wumiiRelatedItems"></script>
 	<script type="text/javascript">
     var wumiiPermaLink = ""; //请用代码生成文章永久的链接
@@ -36,19 +43,15 @@
 	<a href="http://www.wumii.com/widget/relatedItems" style="border:0;">
 		<img src="http://static.wumii.cn/images/pixel.png" alt="无觅相关文章插件，快速提升流量" style="border:0;padding:0;margin:0;" />
 	</a>
-	<!-- UJian Button BEGIN -->
-	<div class="ujian-hook"></div>
-	<script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?uid=1724545"></script>
-	<!-- UJian Button END -->
     <div class="pagination">
       <ul>
       {% if page.previous %}
-        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; 上一篇</a></li>
+        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; {{ page.previous.title }}</a></li>
       {% else %}
         <li class="prev disabled"><a>首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;篇</a></li>
       {% endif %}
       {% if page.next %}
-        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">下一篇 &rarr;</a></li>
+        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }} &rarr;</a></li>
       {% else %}
         <li class="next disabled"><a>末&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;篇</a>
       {% endif %}
