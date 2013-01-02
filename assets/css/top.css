@@ -81,3 +81,46 @@ footer p a{
 	color: #555;
 	text-shadow: 0 1px 0 #fff
 }
+
+/*  ∂•≤ø ’≤ÿcss */
+#toptip {
+	background-color: #e5e5e5;
+	padding: 4px 16px;
+	*padding: 6px 16px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	position: absolute;
+	top: 8px;
+	left: 50%;
+	z-index: 99999;
+}
+
+#toptip .icon {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	*font-size: 1px;
+}
+
+#toptip strong {
+	font-weight: bold;
+}
+
+#toptip .icon-headset {
+	background: url(//mu8.bdstatic.com/player/t/i/szKNXr2y.png) -2px -98px no-repeat scroll;
+	width: 12px;
+	height: 10px;
+	margin-right: 8px;
+}
+
+#toptip .icon-close {
+	background: url(//mu8.bdstatic.com/player/t/i/gZ6ci1tf.png) -204px -672px no-repeat scroll;
+	width: 11px;
+	height: 11px;
+}
+
+#toptip .icon-close:hover {
+	background: url(//mu8.bdstatic.com/player/t/i/szKNXr2y.png) -24px -192px no-repeat scroll;
+}
