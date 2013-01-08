@@ -31,6 +31,22 @@
   </head>
 
   <body>
+	<div id="browser-warning" style="display:none;background-color:#DDECFF;padding:3px 10px 3px 10px;border-color:#F6F6F6; border-style:solid;border-width:2px;">
+		<p style="margin:0 auto;width:921px;font-size: 12px;">为保证最佳浏览效果，我们推荐你使用非IE内核浏览器：<a target="_blank" href="http://www.google.com/chrome">Google Chrome</a>、<a target="_blank" href="http://getfirefox.com">Firefox</a>、<a target="_blank" href="http://se.360.cn/">360浏览器</a>、<a target="_blank" href="http://ie.sogou.com/">搜狗浏览器</a>、<a target="_blank" href="http://www.maxthon.cn/">遨游浏览器</a>、<a target="_blank" href="http://www.opera.com">Opera</a>、<a target="_blank" href="http://www.apple.com.cn/safari/">Safari</a>。</p>
+	</div>
+	 <!--[if lt IE 9]>
+		 <script type="text/javascript">
+
+			var browser=navigator.appName;
+			var b_version=navigator.appVersion;
+			var version=parseFloat(b_version);
+		
+			document.getElementById('browser-warning').style.display='block';
+			{% unless page.title %}
+				alert("博主说：为保证浏览效果，建议使用Firefox或者Chrome等非IE内核的浏览器！");
+			{% endunless %}
+	</script>
+	<![endif]-->
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
