@@ -20,13 +20,13 @@ tags: [python]
     python setup.py install
 检查安装包是否成功。在python的命令下输入:
 
-   >>> import cssselect
-   >>> dir(cssselect)
+    #>>> import cssselect
+    #>>> dir(cssselect)
     ['ExpressionError', 'GenericTranslator', 'HTMLTranslator', 'Selector', 'Selector
     Error', 'SelectorSyntaxError', 'VERSION', '__builtins__', '__doc__', '__file__',
      '__name__', '__package__', '__path__', '__version__', 'parse', 'parser', 'xpath
     ']
-    >>>
+     #>>>
 如果这样就没有问题了。
 还有使用eclipse的pydev开发python程序时，遇到编码的问题。在py文件里输入中文时，出现这样的错误：
 
