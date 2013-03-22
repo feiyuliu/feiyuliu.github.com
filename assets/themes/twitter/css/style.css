@@ -30,6 +30,7 @@ font-family:Microsoft YaHei,tahoma, serif;
 }
 .span8 > p {
 font-family: '微软雅黑',serif;
+line-height:155%;
 font-size:15px;
 }
 /* Page header tweaks */
