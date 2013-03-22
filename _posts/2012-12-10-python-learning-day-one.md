@@ -3,7 +3,7 @@ layout: post
 title: Python学习-Day One
 description: python学习，计算闰年，并解释程序
 category: Python
-tags: [Python]
+tags: [python]
 ---
 {% include JB/setup %}
 ##Python计算闰年

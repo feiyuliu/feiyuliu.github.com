@@ -3,7 +3,7 @@ layout: post
 title: "Python pass argument by Value or Reference"
 description: "Python passes by reference or value ,here is the discuss"
 category: Python
-tags: [Python, passes argument by reference, passes argument by value]
+tags: [python]
 ---
 {% include JB/setup %}
 ##question

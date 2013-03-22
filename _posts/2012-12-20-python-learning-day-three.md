@@ -3,7 +3,7 @@ layout: post
 title: Python学习-Day Three
 description: python学习，字符串处理
 category: Python
-tags: [Python]
+tags: [python]
 ---
 {% include JB/setup %}
 ## repr()和str()

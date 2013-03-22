@@ -3,7 +3,7 @@ layout: post
 title: Python学习-Day Two
 description: python学习，遍历文件，查找与关键字匹配的一行
 category: Python
-tags: [Python]
+tags: [python]
 ---
 {% include JB/setup %}
 ##G2的Python诗

@@ -3,7 +3,7 @@ layout: post
 title: git中文乱码问题
 description: git在windows上安装出现的一系列的中文乱码问题的解决方法
 category: git
-tags: [git, 中文乱码]
+tags: [github]
 ---
 {% include JB/setup %}
 Git中文乱码问题

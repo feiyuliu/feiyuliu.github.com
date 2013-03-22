@@ -3,7 +3,7 @@ layout: post
 title: "用Jekyll写技术博客"
 description: "用Jekyll写技术博客"
 category: Jekyll
-tags: [Jekyll]
+tags: [github]
 ---
 {% include JB/setup %}
 ####缘由

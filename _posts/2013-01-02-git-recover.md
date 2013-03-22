@@ -3,7 +3,7 @@ layout: post
 title: git返回上一次commit
 description: 在电脑上删除没有commit怎么恢复？ 在电脑上删除了，并且commit，怎么恢复
 category: git
-tags: [git，github]
+tags: [github]
 ---
 {% include JB/setup %}
 在window上直接删除了某个文件，但是没有commit。用下面的命令
