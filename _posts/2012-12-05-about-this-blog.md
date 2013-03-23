@@ -3,7 +3,7 @@ layout: post
 title: 关于这个博客
 description: 关于为什么做这个博客和这个博客的内容
 category: life
-tags: [生活感悟]
+tags: [博客]
 ---
 {% include JB/setup %}
 ##关于这些天的想法

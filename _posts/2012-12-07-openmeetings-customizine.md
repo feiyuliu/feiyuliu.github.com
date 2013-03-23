@@ -3,7 +3,7 @@ layout: post
 title: openmeetings的一些定制化
 description: openmeetings的定制，可以修改自己的logo，修改自己的项目名，还有一些性能调优等。
 category: openmeetings
-tags: [openmeetings, JVM]
+tags: [openmeetings]
 ---
 {% include JB/setup %}
 ##openmeetings logo修改
