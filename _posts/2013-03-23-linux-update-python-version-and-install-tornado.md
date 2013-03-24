@@ -6,7 +6,7 @@ category: python
 tags: [python]
 ---
 {% include JB/setup %}
-##python版本升级
+##python版本升级 （**<font color="red">这种安装有问题</font>**）
 1、下载
 
     wget http://www.python.org/ftp/python/2.7.3/Python-2.7.3.tar.bz2
@@ -25,6 +25,8 @@ Python 默认安装目录在/usr/local/lib/python2.7
     $mv /usr/bin/python /usr/bin/python.bak
     $ln -s /usr/local/bin/python2.7 /usr/bin/python
 敲入 python -V 查看是否成功。
+
+**这种安装有问题会破坏系统本身的python环境，导致系统的很多工具不能用，具体请看我另外一篇文章[centos多python环境开发](/python/2013/03/24/install-python-27-on-centos-64.html "多python环境")**
 ##安装Tornado
 1、下载tornado
 
