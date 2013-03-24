@@ -15,7 +15,7 @@ Centos6.4默认的python环境是2.6.6。我们可以自己安装Python 2.7.3。
 先安装。
 
     # yum groupinstall "Development tools"
-     yum install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel
+    # yum install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel
 
 ###下载和安装Python
 下面有个一个非常重要的步骤是我们使用的是make altinstall。如果使用make install，你将会看到在系统中有两个不同版本的Python在/usr/bin/目录中。这将会导致很多问题，而且不好处理。
