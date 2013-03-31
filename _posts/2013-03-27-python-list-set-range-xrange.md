@@ -57,11 +57,11 @@ list.insert(index, elem) -- 向给定的index处插入一个元素。后面的�
 
 list.index(elem) -- 从list开始出查询elem是否在list中。找到就返回elem在list中的index，找不到就抛出ValueError。可以使用in来检查是否在list中来避免抛出错误。
 
-list.remove(elem) -- 从开始查找第一个elem，找到就删除。没有找到就抛出ValueError。
+list.remove(elem) -- 从开始查找第一个elem，找到就删除。没有找到就抛出ValueError。**没有返回值(返回None)**
 
 list.sort() -- 对list排序。推荐使用sorted()函数。
 
-list.reverse() -- 对list颠倒。不返回。 
+list.reverse() -- 对list颠倒。**没有返回值**。 
 
 list.pop(index) -- 移除下表index的元素并返回这个这个元素。如果没有index参数的话，就返回最后面的元素，这跟append()函数相反。
 
