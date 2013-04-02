@@ -37,6 +37,7 @@
   </head>
 
   <body>
+    <div id="topbarloading"></div>
 	<div id="browser-warning" style="display:none;background-color:#DDECFF;padding:3px 10px 3px 10px;border-color:#F6F6F6; border-style:solid;border-width:2px;">
 		<p style="margin:0 auto;width:921px;font-size: 12px;">为保证最佳浏览效果，我们推荐你使用非IE内核浏览器：<a target="_blank" href="http://www.google.com/chrome">Google Chrome</a>、<a target="_blank" href="http://getfirefox.com">Firefox</a>、<a target="_blank" href="http://se.360.cn/">360浏览器</a>、<a target="_blank" href="http://ie.sogou.com/">搜狗浏览器</a>、<a target="_blank" href="http://www.maxthon.cn/">遨游浏览器</a>、<a target="_blank" href="http://www.opera.com">Opera</a>、<a target="_blank" href="http://www.apple.com.cn/safari/">Safari</a>。</p>
 	</div>
@@ -89,6 +90,13 @@
 			</div>
 			<script type="text/javascript">
 			$(document).ready(function () {
+				jQuery("#topbarloading").animate({
+							width: "100%"
+						},
+						{
+							queue: false,
+							duration: 5000
+						});
 				var bt = $('#toolBackTop');
 				var sw = $(document.body)[0].clientWidth;
 

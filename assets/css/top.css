@@ -136,3 +136,6 @@ body {
 	-webkit-transform: rotate(-8deg);
 	-o-transform: rotate(-8deg);
 }*/
+/*博客前面的虚拟加载进度*/
+#topbarloading{background-image:url("https://zlz.im/wp-content/themes/dot-b/images/all.png")}
+#topbarloading{background-position:0 -632px; height:4px; font-size:0; width:20%; background-color:#F1F1F1}
