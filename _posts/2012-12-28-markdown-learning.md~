@@ -156,15 +156,15 @@ Markdown支持两种风格的链接：*Inline*和*Reference*。
 *Reference*：一般应用于多个不同位置使用相同链接。通常分为两个部分，调用部分为`[链接文本][ref]`；定义部分可以出现在文本中的其他位置，格式为`[ref]: http://some/link/address (可选的标题)`。   
 *注：ref中不区分大小写。*   
 
-	这是一个Inline\[示例\](http://liufeyu.cn "可选的title")。
-	这是一个Reference\[示例\][ref]。
-	\[ref\]: http://liufeiyu.cn
+	这是一个Inline[示例](http://liufeyu.cn "可选的title")。
+	这是一个Reference[示例][ref]。
+	[ref]: http://liufeiyu.cn
 
 #### 效果：
 
-这是一个*Inline*\[示例\](http://liufeiyu.cn "可选的title")。   
-这是一个*Reference*\[示例\][ref]。
-\[ref\]: http://liufeiyu.cn
+这是一个*Inline*[示例](http://liufeiyu.cn "可选的title")。   
+这是一个*Reference*[示例][ref]。
+[ref]: http://liufeiyu.cn
 
 - - - 
 

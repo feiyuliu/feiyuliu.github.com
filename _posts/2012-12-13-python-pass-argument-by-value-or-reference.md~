@@ -33,4 +33,4 @@ You can modify the object inside the function if it is mutable, but you **can't 
 Therefore I can answer your question with:
 
 **it is "pass by value" but all values are just references to objects.**
-####for more discussion , go to \[this site\](http://stackoverflow.com/questions/534375/passing-values-in-python)
+####for more discussion , go to [this site](http://stackoverflow.com/questions/534375/passing-values-in-python)
