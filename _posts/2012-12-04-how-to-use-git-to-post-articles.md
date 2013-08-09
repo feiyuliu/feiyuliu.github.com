@@ -71,6 +71,7 @@ Jekyll也提供了许多预设的页面例子,以供参考.你可以学习和按
 
     "Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-0.11.2/lib/jekyll/convertible.rb:29:in ‘read_yaml’: invalid byte sequence in GBK (ArgumentError)"
 
+
 找到ruby目录下gems/jekyll-0.11.0/lib/jekyll/convertible.rb29行修改为下面的内容
 
     self.content = File.read(File.join(base, name), :encoding => "utf-8")
