@@ -6,6 +6,21 @@ category:
 tags: [ubuntu configuration]
 ---
 {% include JB/setup %}
+
+jekyll安装步骤:
+
+具体总结一下，就是三步：
+
+1、安装Ruby
+
+	sudo apt-get install ruby1.9.1-dev
+2、安装Jekyll
+
+	sudo gem install jekyll
+3、安装rake(用来可以生成markdown文件)
+
+	sudo gem install rake
+
 安装jekyll的时候出现一下的错误：
 
     ERROR:  While generating documentation for jekyll-0.12.1
