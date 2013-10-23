@@ -75,3 +75,21 @@ Jekyll也提供了许多预设的页面例子,以供参考.你可以学习和按
 找到ruby目录下gems/jekyll-0.11.0/lib/jekyll/convertible.rb29行修改为下面的内容
 
     self.content = File.read(File.join(base, name), :encoding => "utf-8")
+
+安装rdiscout出现的问题
+
+    feiyuliu@feythin ~/work/github/feiyuliu.github.com $ sudo gem install rdiscount
+    Fetching: rdiscount-2.1.7.gem (100%)
+    Building native extensions.  This could take a while...
+    ERROR:  Error installing rdiscount:
+    ERROR: Failed to build gem native extension.
+    /usr/bin/ruby1.9.1 extconf.rb
+    /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require': cannot load such file -- mkmf (LoadError)
+    from /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
+    from extconf.rb:1:in `<main>'
+    Gem files will remain installed in /var/lib/gems/1.9.1/gems/rdiscount-2.1.7 for inspection.
+    Results logged to /var/lib/gems/1.9.1/gems/rdiscount-2.1.7/ext/gem_make.out
+解决方法：
+
+    sudo apt-get install ruby1.9.1-dev  
+    gem install rdiscount  
