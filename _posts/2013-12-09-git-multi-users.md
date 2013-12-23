@@ -20,11 +20,11 @@ tags: [git]
 修改*config*文件的内容
 
 	Host github.com
-    	    IdentityFile ~/.ssh/id_rsa.github
-    	    user feiyuliu
+	    IdentityFile ~/.ssh/id_rsa.github
+	    user feiyuliu
 	Host gitlab.corp.qunar.com
 	    IdentityFile ~/.ssh/id_rsa.qunar
-            user feiyu.liu
+	    user feiyu.liu
 	ServerAliveInterval 30
 	ControlMaster auto
 	ControlPath /tmp/master-%r@%h:%p
