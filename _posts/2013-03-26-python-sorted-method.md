@@ -8,9 +8,12 @@ tags: [python]
 {% include JB/setup %}
 最简单的排序是使用sorted(list)函数。它接收一个list，返回一个新的排好序的list。原生的list没有变化
 
+```python
 	a = [5, 1, 4, 3]
 	print sorted(a)  ## [1, 3, 4, 5]
 	print a  ## [5, 1, 4, 3]
+```
+
 大部分都是通过传递list到sorted()函数。但是它实际上可以传递任何形式的iterable集合。可以通过添加参数 reverse=True如：sorted(list, reverse=True)来实现倒序。
 
 	strs = ['aa', 'BB', 'zz', 'CC']
