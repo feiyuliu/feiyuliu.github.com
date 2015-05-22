@@ -14,11 +14,14 @@ tags: [git]
 	ssh-keygen -t rsa -f ~/.ssh/id_rsa.github -C "key for github work"
 在*~/.ssh/*新增配置文件config，并修改权限
 
+``` shell
 	touch ~/.ssh/config
 	chmod 600 ~/.ssh/config
+```
 
 修改*config*文件的内容
 
+```shell
 	Host github.com
 	    IdentityFile ~/.ssh/id_rsa.github
 	    user feiyuliu
@@ -28,4 +31,5 @@ tags: [git]
 	ServerAliveInterval 30
 	ControlMaster auto
 	ControlPath /tmp/master-%r@%h:%p
+```
 这样在登录的时候，ssh通过不同的Host来读取不同的私钥文件。
