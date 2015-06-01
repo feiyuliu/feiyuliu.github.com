@@ -1,0 +1,22 @@
+创建一篇日志
+发布日志前,先在配置文件_config.yml中设置URL格式
+
+$permalink: /:year/:month/:title.html
+其他格式参考: https://github.com/mojombo/jekyll/wiki/Permalinks
+
+$rake post title="about this blog" //这个名字将会在url中呈现，所以尽量短些好
+ (in d:/github/feiyuliu.github.com)
+  Creating new post: ./_posts/2012-12-05-about-this-blog.md
+到_post目录下找到刚才建立的文件，然后编辑文件。设置title,description,category,tags等，再就是用markdown来写文章了。
+
+创建一个页面
+$rake page name="about.md"
+Creating new page: ./about.md
+创建一个嵌套的页面
+
+$rake page name="pages/about.md"
+Creating new page: ./pages/about.md
+创建一个路径页面
+
+$rake page name="pages/about"
+Creating new page: ./pages/about/index.html
