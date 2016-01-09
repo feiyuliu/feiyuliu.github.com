@@ -52,7 +52,7 @@ PermitRootLogin no     #不使用root用户登录
 #service:hosts eg:ALL:ALL
 sshd:10.0.0.8  #允许10.0.0.8机器通过ssh来登录
 ```
-* 设置`/etc/hosts.deny`文件来禁止其他的机器登录:`ALL:ALL`
+* 设置`/etc/hosts.deny`文件来禁止其他的机器登录:`sshd:ALL`
 
 
 
